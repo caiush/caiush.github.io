@@ -68,8 +68,7 @@ NBench only tests a single core. As the BPiM3 has twice the core count and each 
 
 # Sysbench and Multicore Performance 
 
-Sysbench can run N treads all computing prime numbers and times how it takes to compute 10K primes. compiling sysbench is a tiny bit more involved:
-
+Sysbench can run N treads computing prime numbers and times 10K primes. Compiling sysbench:
 {% highlight bash %}
 sudo apt-get install libtool automake
 # single threaded
@@ -78,14 +77,14 @@ sudo apt-get install libtool automake
 ./sysbench/sysbench  --test=cpu --num-threads=4 run
 {% endhighlight %}
 
-We compute the number of primes per second in both single threaded and when the number of threads equals the number of cores on the box.
+We compute the number of primes per second in both single threaded and all threads: 4, 8 and 1 for the RPi2, BPiM3 and GCE respectively.
 
 | threading | Bpi M3 | RPi2 | GCE | 
 |-----------|---------|------|-----|
 | Single (primes/sec) |68.5	 | 33.7	| 943.4 | 
 | Multi (primes/sec) | 403.2 | 133.3 | 943.4 | 
 
-As expected the the Bpi-M3 is about 4 times as fast as the RPi2 and (for this computation) about half the speed of the GCE instance, which when you consider the cost of the BPiM3 is really quite a great deal. 
+As expected the the Bpi-M3 is about 4 times as fast as the RPi2 and (for this computation) about half the speed of the GCE instance, which when you consider the cost of the BPiM3, is really quite a great deal. 
 
 # The Cost of Computing Primes
 
@@ -95,5 +94,5 @@ Just for fun, I compute the cost of calculating 1e9 prime numbers. I assume that
 |-----------|---------|------|-----| 
 | Cost $ / 1G primes | 3.12	 | 4.40	| 7.5  |
 
-That is interesting....
+Thats interesting...
 
