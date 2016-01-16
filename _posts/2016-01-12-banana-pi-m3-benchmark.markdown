@@ -92,7 +92,7 @@ As expected the the Bpi-M3 is about 4 times as fast as the RPi2 and (for this co
 Just for fun I compute the cost of calculating 1e9 prime numbers. I assume that the you are running the computations for 3 years and the cloud instance would also be up the entire 24x7. I assume that the running costs of a sinlge board is twice that we pay for energy.
 
 | vendor | Bpi M3 | RPi2 | GCE | 
-|-----------|---------|------|-----|
+|-----------|---------|------|-----| 
 | Cost $ / 1G primes | 3.12	 | 4.40	| 7.5  |
 
 That is interesting....
