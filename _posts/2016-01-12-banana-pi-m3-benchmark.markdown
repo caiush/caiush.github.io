@@ -28,10 +28,9 @@ For the SD card I used [Samsung's 64GB EVO](http://amzn.to/1n1R38S) SD card in b
 
 For the OS I went with the Raspian Jessie Lite Nove 2015 release [download](https://www.raspberrypi.org/downloads/raspbian/) for the RPi2 and Raspbian Jessie Lite Beta 1.0 release for the M3, [download](http://www.bananapi.com/index.php/download?layout=edit&id=90). Burning these images is [pretty easy](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
-One the boards are booted, time to install the bench tools. The first thing I discovered is there really isnt that many great benching tools out there. I used the following tests:
+Once the boards are booted time to install some benching tools. The first thing I discovered is there really isnt that many great benching tools out there for arm. I used the following tests:
      1) NBench: a goldern oldy. Dead easy to compile and run, but only tests single treaded performance. 
      2) sysbench: I didnt bother compiling in the mysql bench marks.
-     3) openssl tests. 
 
 ## NBench and Single Thread Performance
 
@@ -46,7 +45,7 @@ time make
 ./nbench
 {% endhighlight %}
 
-I did the same thing on a Haswell GCE instance, just to get an idea of what "fast" is. As stated above, NBench only really measures single core performance, but its still interesting. Nbench reports its results in terms of number of iterations per second, so *larger numbers are better!*
+I did the same thing on a Haswell GCE instance, just to get an idea of what "fast" is. As stated above, NBench only really measures single core performance, but its still interesting. Ndench reports its results in terms of number of iterations per second, so *larger numbers are better!*
 
 | Metric | RBPi-M3  | RPi2 | GCE | RPi2/BPi-M3 | CGE/BPi-M3 | 
 | -------| ----- | -------| -----|
