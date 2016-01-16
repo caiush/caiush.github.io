@@ -5,9 +5,9 @@ date:   2016-01-16 16:27:43
 categories: raspberrypi
 ---
 
-We benchmarked the BPI M3 against the current 500 gorilla, the [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). 
+We benchmarked the [Banana Pi M3](http://www.banana-pi.org/m3.html) against a stock [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/). 
 
-First up the weigh in. The raw stats for the two boards below. Note, just to get a sense of absolute scale I also include the specs of a Google Compute Engine [n1-standard-1](https://cloud.google.com/compute/docs/machine-types).
+The raw stats for the two boards below. Note, just to get a sense of absolute scale I also include the specs of a Google Compute Engine [n1-standard-1](https://cloud.google.com/compute/docs/machine-types).
 
 | Metric | Raspberry Pi 2 Model B | BPI M3 | n1-standard-1 |
 |--------|-----------------------|--------|
@@ -20,7 +20,7 @@ First up the weigh in. The raw stats for the two boards below. Note, just to get
 | Max Power Draw / W | 10 | 10 |  N/A | 
 
 
-The current availability of the BPI M3 in the US is keeping the prices a bit high. Cheaper deals can be found on Chinese vendor sites, [for example](http://www.aliexpress.com/store/product/2GB-of-RAM-Octa-Core-BPI-M3-Banana-Pi-M3-Single-board-computer-development-board-with/302756_32532101730.html). 
+The current availability of the BPI M3 in the US is keeping the prices a bit high. Cheaper deals can be found on Chinese vendor sites, for example [AliExpress](http://www.aliexpress.com/store/product/2GB-of-RAM-Octa-Core-BPI-M3-Banana-Pi-M3-Single-board-computer-development-board-with/302756_32532101730.html). 
 
 ## The Set Up
 
