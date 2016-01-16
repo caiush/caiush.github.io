@@ -85,11 +85,11 @@ We compute the number of primes per second in both single threaded and when the 
 | Single (primes/sec) |68.5	 | 33.7	| 943.4 | 
 | Multi (primes/sec) | 403.2 | 133.3 | 943.4 | 
 
-As expected the the Bpi-M3 is about 4 times as fast as the RPi2 and (for this computßtion) about half the speed of the GCE instance, which when you consider the cost of the BPiM3 is really quite a great deal. 
+As expected the the Bpi-M3 is about 4 times as fast as the RPi2 and (for this computation) about half the speed of the GCE instance, which when you consider the cost of the BPiM3 is really quite a great deal. 
 
 # The Cost of Computing Primes
 
-Just for fun I compute the cost of calculating 1e9 prime numbers. I assume that the you are running the computations for 3 years and the cloud instance would also be up the entire 24x7. I assume that the running costs of a sinlge board is twice that we pay for energy.
+Just for fun, I compute the cost of calculating 1e9 prime numbers. I assume that the you are running the computations for 3 years and the cloud instance would also be up the entire 24x7. I assume that the running costs of a single board is twice that we pay for energy.
 
 | vendor | Bpi M3 | RPi2 | GCE | 
 |-----------|---------|------|-----| 
